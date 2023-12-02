@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <title>Justin Hiemstra</title>
+
+<meta name ="author" content="Justin Hiemstra"/>
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Justin Hiemstra" />
+<meta name="author" content="Justin Hiemstra" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.101.0" />
+
+
+
+  <link
+    rel="stylesheet"
+    href="/css/bootstrap/bootstrap.min.css"
+  />
+  <script src="https://kit.fontawesome.com/b1307f3c2c.js" crossorigin="anonymous"></script>
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu_light.css" />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+  <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = () => {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="container">
+    <main style="min-height: calc(100vh - 60px);">
+      
+      <div class="d-flex flex-row row p-2">
+  <h3 class="main-menu mr-3">
+    <a href="https://jhiems.github.io">Home</a>
+  </h3>
+  <h3 class="main-menu mr-3">
+    <a href="/contact">Contact</a>
+  </h3>
+  <h3 class="main-menu mr-3">
+    <a href="/projects">Projects</a>
+  </h3>
+</div>
+
+      
+<div class="rounded p-2 aafu-border border">
+  <div class="border-bottom aafu-border">
+    <h1 class="top-h1" style="font-size: 2.75em;">The House Flip Hustle Pt. 2</h1><div class="mb-2">
+  <p class="mb-1">June 10, 2022</p>
+   
+  
+  
+  
+  <p class="metadata-value mb-1 taxa taxa-container-div list-tags">
+    Tags: 
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="/tags/house-flip"
+      title="tags"
+    >House Flip</a>
+    
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="/tags/grad-school"
+      title="tags"
+    >Grad School</a>
+    
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="/tags/diy"
+      title="tags"
+    >DIY</a>
+    
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="/tags/home-renovation"
+      title="tags"
+    >Home Renovation</a>
+    
+  </p>
+  
+  
+</div>
+</div>
+  <div class="content">
+    <h1 id="the-backyard">The Backyard</h1>
+<p>If you&rsquo;ve read <a href="https://justinhiemstra.com/projects/house-flip/">&ldquo;The House Flip Hustle Pt. 1,&quot;</a> you may have some sense of what the backyard of our house flip looked like when we bought it. In case you haven&rsquo;t, a picture is worth a thousand words, so here&rsquo;s a four-thousand-word summary:</p>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<div id="slideshow1" class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">1 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Overgrown backyard" src="/images/Backyard/Backyard BAD 1.JPG" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Uffda!</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">2 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Overgrown backyard 2" src="/images/Backyard/Backyard BAD 2.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">What lovely pines</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">3 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Overgrown backyard 3" src="/images/Backyard/Backyard BAD 3.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">It just keeps getting better, doesn't it?</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">4 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Overgrown backyard 4" src="/images/Backyard/Backyard BAD 4.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Oofda!</figcaption>
+</div>
+<p><a class="prev" onclick="plusSlides(-1,slideshow1)">❮</a>
+<a class="next" onclick="plusSlides(1,slideshow1)">❯</a></p>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+</div>
+</div>
+<br>
+<p>Admittedly, we bought this house over zoom because, hey, it was the middle of the pandemic and all that; there were no open houses, no by-appointment visits, no opportunities to see things with our own eyes before putting in an offer. Lessons learned I guess!</p>
+<h2 id="day-one">Day One</h2>
+<p>Anyway, what to do about this backyard? It would quite obviously require extensive work, and because Z and I already planned to spend winter breaks working on the <em>inside</em>, we decided to get started on the outside right away. The first step, we decided, was to clear cut much of what we could see, from the thorny thistles and the viny wild violet that crept tortuously across the yard, to the sagging boughs of the towering white pines that bookended either end of a whispy, dying birch. Luckily, we came armed with a $35 lawnmower from Craigslist, and two semi-functional weed whippers that were purchased as a pair for $15!</p>
+<p>Like Aragorn and the Gondorians before the Black Gate, we charged against the mud-born masses of <s>uruk-hai</s> thistles, ready to win this battle against all odds.</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: left;
+        width: 45%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p><img title="Cutting boughs of the White Pine" alt="Tree boughs after being cut." src="/images/Backyard/Backyard TRIM 1.jpeg" style="width: 100%;"> </p>
+            <figcaption>Oh, how the mighty shall FALL</figcaption> 
+        </figure>
+    </div>
+</div>
+<p>In the first night of work, we made appreciable progress. The lawnmower, surprisingly, was wholly adequate for the task at hand, and a good lopper from the hardware store made short work of the throngs of sapplings that had sprouted all over the yard (a brief side note &ndash; loppers are one of the most enjoyable garden tools in existence. Seriously, if you&rsquo;ve never cut down a bunch of sapplings with one, go give it a try!). While this left dozens of <a href="https://en.wikipedia.org/wiki/Punji_stick">punjis</a> for me to cut/dig out the next spring, by the end of night one we had successfully mowed down most of weeds, and trimmed off the lowest branches of the white pines.</p>
+<p>White pines, taxonomically referred to as Pinus Strobus, are magnificent trees, and one of my very favorite conifers. They can be identified with ease, as they are one of the only (in fact, I believe they are <em>the</em> only) pines in the Midwest with 5-needle fascicles &ndash; in other words, to identify the white pine, pick a cluster of needles and count how many needles are in the cluster. If it&rsquo;s five, you&rsquo;ve got yourself a white pine. Two needles usually means it&rsquo;s a red pine, or Pinus Resinosa. Generally, with conifers in the Pinaceae family, one must be concerned about <a href="https://extension.umn.edu/plant-diseases/pine-needle-rust">pine rust</a>, a parasitic fungus that tends to affect the trees lowest branches, but which rarely causes outright death to trees that are well-established. During the summer between my freshman and sophomore years in high school, I participated in the Minnesota Conservation Corps for two months, and it was here that I learned how to trim white pines to prevent rust. As my crew trimmed remote trails in northern Minnesota, I was exploited for my height; standing at 6'4&rdquo;,not only could I reach the higher branches, but because we were instructed to cut any branch that hung lower than 6&rsquo;, I just decided to cut any of the branches I hit my head on &ndash; sweet, sweet revenge 😈! To properly trim the branches in a way that doesn&rsquo;t unduly harm the tree, use a sharp lopper to cut the branch about 1&quot;-2&quot; from the trunk, ensuring that the cut is clean and orthogonal to the direction of the branch&rsquo;s growth. The reason we avoid cutting too close to the tree is that doing so can cause a wound that the tree has trouble healing.</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: left;
+        width: 45%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p><img title="The yard is looking better already!" alt="The yard is more clear already." src="/images/Backyard/Backyard TRIM 3.jpeg" style="width: 100%;"> </p>
+            <figcaption>Slowly and unsurely</figcaption> 
+        </figure>
+    </div>
+</div>
+<h2 id="day-two">Day Two</h2>
+<p>After only one afternoon, the backyard was looking better, which was enough to make Z and I excited about the next day of work. Remaining was to cut down the sickly birch, get rid of the stump (a task that would end up being much more work than anticipated), remove 10+ years of built-up pine needles, finally kill all the weeds and remove their remnants from the dirt, till the soil, and plant new grass.</p>
+<p>I&rsquo;m getting ahead of myself, though, as some of these things wouldn&rsquo;t happen until the following summers. In the meantime, we built a firepit to burn some of the brush that had accumulated (as well as to enjoy the slow roast of some yummy marshmallows, complete with honey graham and Hershy&rsquo;s chocolate). The first thing we would burn was the birch, which we cut down the second morning at first light. If you&rsquo;ve never burned birch bark before, it&rsquo;s a very unique experience. Imbued with sap, the bark lights quickly and ferociously, curling into tight coils of black char as a thick, sweet smoke crackles out of its flesh. It makes a great fire starter in my experience.</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: right;
+        width: 45%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p><img title="Burn baby burn" alt="Birch tree being burned at dusk in new firepit." src="/images/Backyard/Backyard TRIM 6.jpeg" style="width: 100%;"> </p>
+            <figcaption>Time for a bit of relaxation</figcaption> 
+        </figure>
+    </div>
+</div>
+<p>By the end of the fall, the backyard was starting to look more like a yard and less like a jungle. There was still a lot of work yet to be done, though, but with winter on its way and the school year beginning, we put things on pause for a bit.</p>
+<h2 id="summer-two">Summer Two</h2>
+<p>The following spring, as the snow melted and the little shoots of green (aka all of the weeds) started to pop up all over the back yard, I knew my work was cut out for me. Raking all the debris proved to be a monumental task and took me nearly a week of labor. The challenge was less in the needles and more in the extensive growth of the wild violets that had set up camp there. Wild violet is a pretty weed, in my opinion, sporting small, purple flowers. It&rsquo;s also a rhizomatic plant that proliferates by sending rhizomes, similar to underground vines, radially from each plant. If you see the flowers, expect to be ripping out many feet of these vines from the ground.</p>
+<p>Eventually, the weeds did capitulate to my mighty hoeing prowess (sorry y&rsquo;all, I couldn&rsquo;t resist), and the yard looked more or less like a clean slate. Next on the docket, getting rid of <em>the mythical stump</em>.</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: left;
+        width: 45%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p><img title="Lots of weeds, lots of vines" alt="Pile of vines from removing wild violet." src="/images/Backyard/Backyard RAKE 2.jpeg" style="width: 100%;"> </p>
+            <figcaption>Thanks for all the blisters...</figcaption> 
+        </figure>
+    </div>
+</div>
+<h2 id="the-mythical-stump">The Mythical Stump</h2>
+<p>The birch we cut down the fall prior had left a hefty stump smack-dab in the middle of the backyard. Normally, with a stump like this, the average sane person would call someone with a stump grinder. The more intrepid individual might even choose to rent their own stump grinder. But neither of these options suited us. Z and I are, after all, grad students on the most budgety of budgets. As the motto we used to repeat went, &ldquo;We have time, not money.&rdquo; (Little did I know at that time that Z would be choosing to leave UW Madison for Cornell University in Ithaca, NY, leaving us with neither time nor money. It&rsquo;s a decision for which I cannot fault him, but it certainly meant progress had to happen at a quick trot.)</p>
+<p>Instead, we decided we would wage a more primitive war against the stump by drilling some holes in it, soaking it in kerosene, piling a bunch of charcoal on it, and trying to burn it out.</p>
+<p>The fall prior when we decided upon this course of action, we had the foresight to drill the holes and add a natural stump decomposer with the intent of punking up the wood before it was time to burn it. The stump decomposer was none other than a bottle of KNO3/potassium nitrate, which, by the way, when mixed with equal parts sugar and caramelized on the stove makes excellent rocket fuel if funneled properly, and a decent <a href="https://youtube.com/shorts/fuNbCMzNeNY?feature=share">smoke bomb</a> if not. To aid in its death we made the stump our dumping ground for used cooking oil in the middle of winter. There is nothing sweeter than to see liters of hot, scalding oil send up plumes of steam as it is poured over the remnants of a foe fallen-yet-standing.</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: right;
+        width: 45%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p><img title="Burning the stump" alt="Burning the stump using charcoal." src="/images/Backyard/Stump Burn.jpeg" style="width: 100%;"> </p>
+            <figcaption>24 hours in and not a dent :(</figcaption> 
+        </figure>
+    </div>
+</div>
+<p>Needless to say, all of this didn&rsquo;t work and the burning did almost nothing to the stump. The stump had become this mythical beast, unyielding and unwilling to move. The first of a series of Herculean tasks on our Hero&rsquo;s Journey. We were left scratching our heads. What to do next?</p>
+<p>I had long ago decided that trying to dig the stump out would be too cumbersome, and at this point we were on the verge of calling an arborist to come take care of it for us. Luckily I&rsquo;ve always been a stubborn sort, and to quote my father, &ldquo;you ain&rsquo;t licked until you&rsquo;re licked.&rdquo; I would give digging out the stump a try.</p>
+<p>This process was quite difficult, owing to the fact that the tools at my disposal consisted of a blunted axe and a German Army trenching shovel from the 1950&rsquo;s (the most reliable tool in my arsenal). And yet, we eventually, slowly, managed to pry it out.</p>
+<p>Two men, laborously chopping away at a stump inconveniently sprouting from the center of their stead. Sound familiar? If it doesn&rsquo;t, you probably didn&rsquo;t grow up around spaghetti westerns or haven&rsquo;t studied much film. If it does, you&rsquo;ll know I&rsquo;m refering to the 1953 American classic, &ldquo;Shane,&rdquo; starring Alan Ladd in the titular role, with Van Heflin as the stead owner. We simply couldn&rsquo;t pass on the opportunity to pay homage:</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p> <iframe max-width="560" width="auto" height="auto" src="https://www.youtube.com/embed/QipOIEguQUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> </p>
+        </figure>
+    </div>
+</div>
+<p>With <em>that</em> out of the way, we could move onto the next step: killing the remaining weeds to establish new grass.</p>
+<p>I&rsquo;ve never been a fan of using harsh chemicals for the sake of a pretty lawn, and the idea of using glyphosate in a town surrounded by lakes and pristine marshes that would eventually accept any such chemicals as runoff didn&rsquo;t sit well with me. Yet, if ever there were a yard that warranted such treatment, I do believe it was ours. After a few rounds of glyphosate, the yard was sufficiently dead and ready, like a phoenix, to be reborn from its own ashes.</p>
+<p>Now came the issue of how we would actually get anything to grow. Sod was the easiest answer and almost guaranteed to work, but with a footprint of nearly 4400 square feet, our backyard was simply too large to make this an affordable option. Instead, we would try to spread a grass seed blend, painstakingly care for it by watering it day after day, and hope that something sprouted.</p>
+<p>Planting grass seed is best done in the fall, approximately 10 weeks before you expect the first hard frost. These 10 weeks tend to be cool, which helps the grass in numerous ways: first, the cool weather won&rsquo;t scorch the new grass the way summer sun might, which gives the grass time to establish a robust root system. Second, it aids in water retention, which is the most essential component of successfully planting new grass. Unfortunately, we missed the window of opportunity and had to wait until the next spring to plant (spring also provides a window of cool, damp weather that lets the grass send its roots deep into the earth in search of nutrients).</p>
+<div class="im_row">
+    <div class="im_column">
+        <figure style="float: right;
+        width: 45%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em">
+            <p><img title="Clean Slate" alt="The backyard is a clean slate, ready to be planted." src="/images/Backyard/Clean slate.jpeg" style="width: 100%;"> </p>
+            <figcaption>Can you hear it calling "Plant me!"?</figcaption> 
+        </figure>
+    </div>
+</div>
+<p>By the time spring rolled around, the yard really did look like a clean slate, so we ran off to Home Depot to rent their biggest self-propelled tiller and a drum roller. I wound up with delightful Honda rear-tine that basically did all the work for me at only $70 for the four hours it would take to get the tiller home, till, spread new seed, roll, clean up the mud, and return the units. All in all, between the seed, rentals, and glyphosate, the soon-to-be lawn had set us back around $400, a far cry shy of the $4000 fresh sod would have cost. All that was left, aside from some later beautification with mulch and monster-sized hostas, was to water and wait.</p>
+<div id="slideshow2" class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">1 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Halfway through tilling the yard" src="/images/Backyard/Tilling.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Hopefully I didn't disturb any mycorrhizae!</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">2 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="The Honda tiller we used" src="/images/Backyard/Tiller.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Honda power</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">3 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Rolling the grass seed" src="/images/Backyard/Rolling grass seed.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Rollin rollin rollin, keep them doggies moving! </figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">4 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Pile of needles from the backyard" src="/images/Backyard/Pile of needles.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">This is just one fall/spring of needles. Can you imagine a pile 10x the size? I can!</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">1 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Grass beginning to grow" src="/images/Backyard/Grass growing 1.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Like an old man's head, but headed in the other direction</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">1 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Grass growing, but a bit more" src="/images/Backyard/Grass growing 2.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Grass growing, but a bit more</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">1 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="Established Grass" src="/images/Backyard/Grass growing 3.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">After the first mow</figcaption>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext" style="padding: 1.75em 0em 0em 3.5em">1 / 4</div>
+  <figure style=" float: center;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        /*border: thin silver solid;*/
+        margin: 0.5em;
+        padding: 0.5em 3em 0.5em 2em">
+  <img alt="The grass is established and mowed" src="/images/Backyard/Grass growing 4.jpeg" style="width:100%">
+  <figcaption style="padding: 0.5em 0em 0em 0em">Stay tuned for an article about the shed!</figcaption>
+</div>
+<p><a class="prev" onclick="plusSlides(-1, slideshow2)">❮</a>
+<a class="next" onclick="plusSlides(1, slideshow2)">❯</a></p>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(5, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(6, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(7, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(8, slideshow2)"></span> 
+</div>
+</div>
+<br>
+<script>
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+
+  </div>
+</div>
+<div class="d-flex flex-row justify-content-center">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <a
+      href="/projects/scuba/"
+      title="Scuba Diving"
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <a
+      href="/projects/house-flip-pt-3/"
+      title="The House Flip Hustle Pt. 3"
+    >
+      <i class="nav-menu fas fa-chevron-circle-right"></i>
+    </a>
+    
+  </h3>
+</div>
+
+
+    </main>
+    
+    <footer class=" mt-2 mb-4 text-center ">
+  <span class="markdownify">Justin Hiemstra 2023 - <a href="mailto:justinhiemstra+website@protonmail.com">justinhiemstra+website@protonmail.com</a></span>
+  <span style="font-size:0px;">
+    &middot;
+
+  </span>
+</footer>
+
+    
+  </body>
+</html>

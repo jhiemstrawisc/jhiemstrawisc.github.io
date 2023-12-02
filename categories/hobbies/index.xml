@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hobbies on </title>
+    <link>https://jhiems.github.io/categories/hobbies/</link>
+    <description>Recent content in Hobbies on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jhiems.github.io/categories/hobbies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scuba Diving</title>
+      <link>https://jhiems.github.io/projects/scuba/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jhiems.github.io/projects/scuba/</guid>
+      <description>Scuba Diving Stay tuned :)</description>
+    </item>
+    
+    <item>
+      <title>Mycology</title>
+      <link>https://jhiems.github.io/projects/mycology/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jhiems.github.io/projects/mycology/</guid>
+      <description>Mycological Musings Stay tuned for some news regarding my mycological musings!</description>
+    </item>
+    
+  </channel>
+</rss>
