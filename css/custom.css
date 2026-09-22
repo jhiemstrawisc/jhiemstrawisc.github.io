@@ -1,0 +1,229 @@
+/* ==========================================================================
+   custom.css — site-specific styles layered on top of the aafu theme.
+   Loaded once from layouts/partials/head.html.
+
+   Nothing in here is per-post. If you catch yourself pasting a <style> block
+   into a content file, the rule belongs in this file instead.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Figures — a single image or embed inside a post.
+   Rendered by layouts/shortcodes/photo.html
+   -------------------------------------------------------------------------- */
+
+.post-figure {
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+
+.post-figure img,
+.post-figure iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post-figure figcaption {
+  padding-top: 0.5em;
+}
+
+/* Alignment variants. */
+.post-figure--center {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.post-figure--left {
+  float: left;
+  width: 45%;
+}
+
+.post-figure--right {
+  float: right;
+  width: 45%;
+}
+
+/* A 45% float is unreadable on a phone, so stop floating on narrow screens. */
+@media (max-width: 600px) {
+  .post-figure--left,
+  .post-figure--right {
+    float: none;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Slideshow — rendered by layouts/shortcodes/slideshow.html + slide.html.
+   Arrows, dots and the counter are injected by static/js/slideshow.js.
+   -------------------------------------------------------------------------- */
+
+.slideshow {
+  position: relative;
+  max-width: 1000px;
+  margin: 1.5em auto;
+}
+
+/* Before the JS runs, show only the first slide so the page never flashes a
+   vertical stack of every image.
+ *
+ * The :not([data-ready]) guard is essential. slideshow.js sets data-ready on the
+ * container once it has initialised, which switches this rule off and leaves
+ * visibility driven solely by the [hidden] attribute below. Without the guard
+ * this rule keeps matching every slide after the first for ever, so advancing
+ * the slideshow un-hides a slide that CSS is still hiding: the gallery goes
+ * blank and collapses to nothing. */
+.slideshow:not([data-ready]) > .slideshow__slide + .slideshow__slide {
+  display: none;
+}
+
+.slideshow__slide {
+  margin: 0;
+  /* Symmetric, so the image is centred in the container. The old 3em/2em
+     asymmetry was inherited from the copy-pasted inline styles. */
+  padding: 0.5em 2em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+
+.slideshow__slide[hidden] {
+  display: none;
+}
+
+/* Letterboxing. Every slide occupies a box of the same shape, so the gallery
+   keeps one height and the arrows, dots and the text below it stay put while
+   you click through. object-fit: contain means nothing is ever cropped: an
+   image that does not match the box is centred and the leftover space shows as
+   bars.
+ *
+ * 4/3 is the default because it is the median shape of the images actually in
+ * these galleries -- 21 of 30 are within a hair of it. Override per gallery
+ * with {{< slideshow ratio="16/9" >}} when a set is mostly panoramas or mostly
+ * portraits; the shortcode sets --slideshow-ratio on the container.
+ *
+ * The bar colour is a neutral tint rather than a fixed grey so it reads the
+ * same against the light and dark themes. */
+.slideshow__slide img,
+.slideshow__slide video {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--slideshow-ratio, 4 / 3);
+  object-fit: contain;
+  background-color: rgba(128, 128, 128, 0.12);
+}
+
+.slideshow__slide figcaption {
+  padding-top: 0.5em;
+}
+
+/* Previous / next arrows */
+/* The arrows and the counter carry their own dark backdrop rather than relying
+   on the photo behind them. They sit partly over the page, not only over the
+   image, and the page is white in the light theme -- white-on-transparent text
+   was effectively invisible. */
+.slideshow__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px 12px;
+  border: 0;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.slideshow__nav--prev {
+  left: 0.6em;
+  border-radius: 4px;
+}
+
+.slideshow__nav--next {
+  right: 0.6em;
+  border-radius: 4px;
+}
+
+.slideshow__nav:hover,
+.slideshow__nav:focus-visible {
+  background-color: rgba(0, 0, 0, 0.85);
+  outline: none;
+}
+
+.slideshow__nav:focus-visible {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+/* "3 / 14" counter. Offsets clear the slide's own padding so the badge sits
+   over the image rather than beside it. */
+.slideshow__counter {
+  position: absolute;
+  top: 1.1em;
+  left: 2.6em;  /* clears the slide's 2em padding */
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Dot indicators */
+.slideshow__dots {
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+.slideshow__dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #9a9a9a;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.slideshow__dot:hover,
+.slideshow__dot:focus-visible,
+.slideshow__dot[aria-current="true"] {
+  background-color: #2b2b2b;
+  outline: none;
+}
+
+.slideshow__dot:focus-visible {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Fade-in, skipped for anyone who has asked for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .slideshow__slide:not([hidden]) {
+    animation: slideshow-fade 1s ease forwards;
+  }
+}
+
+@keyframes slideshow-fade {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
+
+@media (max-width: 400px) {
+  .slideshow__nav     { padding: 10px; font-size: 11px; }
+  .slideshow__slide   { padding: 0.5em 1.4em; }
+  .slideshow__counter { top: 0.9em; left: 1.9em; }
+  .slideshow__nav--prev { left: 0.2em; }
+  .slideshow__nav--next { right: 0.2em; }
+}
